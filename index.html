@@ -1,156 +1,50 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>YOUR NAME — Personal Site</title>
-  <meta name="description" content="Academic profile, research, teaching, and publications" />
-  <meta property="og:title" content="YOUR NAME — Personal Site" />
-  <meta property="og:description" content="Academic profile, research, teaching, and publications" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/assets/og-image.png" />
-  <meta name="color-scheme" content="light dark" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📚</text></svg>">
-  <style>
-    :root {
-      --bg: #0b0c10;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #7c3aed;
-      --card: #111317;
-      --border: #1f2937;
-    }
-    @media (prefers-color-scheme: light) {
-      :root { --bg:#ffffff; --text:#0f172a; --muted:#6b7280; --accent:#6d28d9; --card:#f8fafc; --border:#e5e7eb; }
-    }
-    html, body { height: 100%; }
-    body { margin: 0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, "Noto Sans", "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: var(--bg); color: var(--text); }
-    .container { max-width: 980px; margin: 0 auto; padding: 24px; }
-    header { position: sticky; top: 0; backdrop-filter: blur(8px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); }
-    nav { display: flex; align-items: center; gap: 16px; padding: 12px 24px; }
-    .brand { font-weight: 700; letter-spacing: 0.4px; }
-    .spacer { flex: 1; }
-    a { color: var(--text); text-decoration: none; }
-    a:hover { color: var(--accent); }
-    .btn { border: 1px solid var(--border); padding: 8px 12px; border-radius: 12px; }
-    .hero { padding: 64px 24px 24px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: center; }
-    .hero h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.15; margin: 0 0 12px; }
-    .hero p { color: var(--muted); margin: 0 0 12px; }
-    .tag { display: inline-block; font-size: 12px; padding: 2px 8px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); }
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; }
-    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    h2 { font-size: 22px; margin: 24px 0 12px; }
-    h3 { font-size: 18px; margin: 0 0 6px; }
-    ul { margin: 0; padding-left: 18px; }
-    footer { margin: 48px 0 16px; color: var(--muted); font-size: 14px; }
-    .section { padding: 24px; border: 1px solid var(--border); border-radius: 16px; background: var(--card); }
-    .inline { display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 14px; }
-    @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr; } nav { flex-wrap: wrap; } }
-  </style>
-</head>
-<body>
-  <header>
-    <nav class="container">
-      <a class="brand" href="#">YOUR NAME</a>
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#publications">Publications</a>
-      <a href="#contact" class="spacer">Contact</a>
-      <a class="btn" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
-    </nav>
-  </header>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gaiane Shaboian — Personal Site</title>
+<meta name="description" content="Research, teaching, publications">
+<link rel="icon" href="/favicon.png" type="image/png"><!-- или замени на emoji-иконку -->
+<link rel="stylesheet" href="/assets/style.css">
+</head><body>
 
-  <main class="container">
-    <section class="hero">
-      <div>
-        <span class="tag">Academic • Education • Sociology</span>
-        <h1>Researching refugee education, urban schooling, and future-making</h1>
-        <p>I'm <strong>YOUR NAME</strong>, a master's student at the HSE Institute of Education. I study <em>educational trajectories and integration</em> of adolescents from Artsakh in Armenian urban schools. I combine qualitative methods (interviews, visual & participatory approaches) with data analysis.</p>
-        <div class="inline">
-          <a class="btn" href="#publications">See publications</a>
-          <a class="btn" href="/cv.pdf">Download CV</a>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Highlights</h3>
-        <ul>
-          <li>Current project: <em>Local meanings of help & care in schools</em>.</li>
-          <li>Methods: interviews, Bridge Drawing Test, codebooks, ethics-ready workflows.</li>
-          <li>Teaching: math for grades 5–8, connecting real-life problem solving.</li>
-        </ul>
-      </div>
-    </section>
+<!-- header -->
+<header>
+  <nav class="container">
+    <a class="brand" href="/index.html">GAIANE SHABOIAN</a>
+    <a href="/about.html">About</a>
+    <a href="/research.html">Research</a>
+    <a href="/teaching.html">Teaching</a>
+    <a href="/publications.html">Publications</a>
+    <a href="/contact.html" class="spacer">Contact</a>
+    <a class="btn" href="https://github.com/GaianeShaboian" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+</header>
 
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>Short bio (3–4 sentences). Replace this with a concise description of your background, interests, and goals. Mention core topics (refugee education, urban education, participatory methods), and what you're working on this year.</p>
-    </section>
-
-    <section id="research" class="section">
-      <h2>Research</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Educational trajectories of adolescent refugees</h3>
-          <p class="muted">2024–2026 · Armenia · Qualitative & mixed methods</p>
-          <ul>
-            <li>Expert interviews (teachers, volunteers, psychologists).</li>
-            <li>Student interviews + Bridge Drawing Test (BDT).</li>
-            <li>Codebook-driven analysis; ethics package prepared.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Symbolic boundaries in physics faculties</h3>
-          <p class="muted">2024 · Moscow · Sociology of education</p>
-          <ul>
-            <li>Strategies of olympiad preparation and peer effects.</li>
-            <li>Integration trajectories in selective universities.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Math teaching for 5–8 grades</h3>
-          <p class="muted">Ongoing · Pedagogy</p>
-          <ul>
-            <li>Real-world tasks, historical context, algorithmic thinking.</li>
-            <li>Soft skills, cross-subject links, student agency.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="teaching" class="section">
-      <h2>Teaching</h2>
+<main class="container">
+  <section class="grid">
+    <div>
+      <span class="tag">Education • Sociology</span>
+      <h1>Refugee education, urban schooling & future-making</h1>
+      <p class="muted">I’m <strong>Gaiane Shaboian</strong>, a master’s student at HSE Institute of Education. I study educational trajectories and integration of adolescents from Artsakh in Armenian urban schools using qualitative and mixed methods.</p>
+      <p>
+        <a class="btn" href="/publications.html">See publications</a>
+        <a class="btn" href="/cv.pdf">Download CV</a>
+      </p>
+    </div>
+    <div class="card">
+      <h2>Highlights</h2>
       <ul>
-        <li><strong>2025</strong> — Online math course (grades 5–8), HSE-approved programs.</li>
-        <li><strong>2024</strong> — Mentoring students in problem solving and algorithm design.</li>
+        <li>Project: Local meanings of help & care in schools.</li>
+        <li>Methods: interviews, Bridge Drawing Test, ethics-ready codebooks.</li>
+        <li>Teaching: math for grades 5–8.</li>
       </ul>
-    </section>
+    </div>
+  </section>
+</main>
 
-    <section id="publications" class="section">
-      <h2>Publications & Writing</h2>
-      <ul>
-        <li>[2025] Proposal: <em>Ethnography & Education</em> — Local meanings of help and care.</li>
-        <li>[2024] Essay: Educational migration from small towns and villages.</li>
-        <li>[2024] Teaching materials: Math modules (grades 5–8).</li>
-      </ul>
-      <p class="mono">Tip: keep this list short on the homepage; link to a full list on /publications.html later.</p>
-    </section>
+<!-- footer -->
+<footer class="container">
+  <p>© <span id="year"></span> Gaiane Shaboian. Last updated <time>2025-11-04</time>.</p>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body></html>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a> · 
-         GitHub: <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">@YOUR-USERNAME</a> · 
-         Google Scholar / ORCID / LinkedIn (optional)</p>
-    </section>
-
-    <footer>
-      <p>© <span id="year"></span> YOUR NAME. Last updated <time id="updated">2025‑11‑04</time>.</p>
-    </footer>
-  </main>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
