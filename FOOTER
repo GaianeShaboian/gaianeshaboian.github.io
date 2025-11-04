@@ -1,0 +1,18 @@
+<!-- HEADER (вставляется в каждую страницу) -->
+<header>
+  <nav class="container">
+    <a class="brand" href="/index.html">GAIANE SHABOIAN</a>
+    <a href="/about.html">About</a>
+    <a href="/research.html">Research</a>
+    <a href="/teaching.html">Teaching</a>
+    <a href="/publications.html">Publications</a>
+    <a href="/contact.html" class="spacer">Contact</a>
+    <a class="btn" href="https://github.com/GaianeShaboian" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+</header>
+
+<!-- FOOTER (вставляется в каждую страницу) -->
+<footer class="container">
+  <p>© <span id="year"></span> Gaiane Shaboian. Last updated <time>2025-11-04</time>.</p>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
